@@ -1,0 +1,119 @@
+<div class="text-center m-5">
+    <hr />
+    <h1>
+        {{titulo}}
+    </h1>
+    <hr />
+</div>
+
+<style>
+  @media (max-width: 2800px) {
+  .facet_sidebar {
+    display: none;
+  }
+}
+@media (min-width: 300px){
+  .facet_sidebar {
+    display: none;
+  }
+
+}
+
+</style>
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-indicators">
+    <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide-to="1"
+      aria-label="Slide 2"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide-to="2"
+      aria-label="Slide 3"
+    ></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://assets.gqindia.com/photos/620e52c018140d747a9b0a2a/master/pass/Lead-Image.jpg" class="d-block w-28" alt="..." />
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://cdn.concreteplayground.com/content/uploads/2014/11/sneakerboy-1-1920x1080.jpg" class="d-block w-28" alt="..." />
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.solecollector.com/complex/images/xsaxggiozy1cvragb4hh/youngboy-never-broke-again-goes-sneaker-shopping-with-complex-sneaker-shopping.jpg" class="d-block w-28" alt="..." />
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#carouselExampleCaptions"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#carouselExampleCaptions"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="container">
+    <div class="text-center m-5">
+        <hr>
+            <h2>
+                Listado de Productos
+            </h2>
+    </div>
+
+    <table class="table">
+        <thead>
+            <th>Id Producto</th>
+            <th>Nombre</th>
+            <th>Precio</th>
+        </thead>
+        <tbody>
+            {{#each results}}
+            <tr>
+                <td>{{ idproducto }}</td>
+                <td>{{ nombre }}</td>
+                <td>{{ precio }}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+
+    </table>
+
+</div>
+
+<script src=""></script>
+<script src=""></script>

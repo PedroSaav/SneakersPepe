@@ -1,0 +1,48 @@
+
+
+
+<div class="container">
+
+<div class="text-center m-5">
+    <hr>
+    <h1>
+        {{ titulo }}
+    </h1>
+    <hr>
+</div>
+
+<style>
+    @media (max-width: 2800px) {
+  .facet_sidebar {
+    display: none;
+  }
+}
+</style>
+
+<div class="row">
+<form action="./contacto" method="post">
+    <div class="mb-3 row">
+        <label for="nombre" class="col-sm-2 col-form-label">Nombre: </label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre">
+    </div>
+    </div>
+    <div class="mb-3 row">
+        <label for="email" class="col-sm-2 col-form-label">Email: </label>
+    <div class="col-sm-10">
+        <input type="email" class="form-control" name="email" id="email" placeholder="ejemplo@gmail.com">
+    </div>
+    </div>
+    <div class="mb-3 text-center">
+        <input type="submit" class="button btn btn-success w-50 p-2" value="Me Suscribo para llenarme de Spam">
+    </div>
+
+    <div class="text-center">
+        <h2 class="text-danger">
+            {{ validacion }}
+        </h2>
+    </div>
+</form>
+
+</div>
+</div>
